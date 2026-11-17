@@ -1,0 +1,5 @@
+import { Text, View } from 'react-native';
+import { theme } from '@/constants/theme';
+export default function ReportsScreen() {
+  return <View style={{ flex: 1, padding: 22, paddingTop: 64, gap: 12 }}><Text style={{ color: theme.colors.muted, fontSize: 13 }}>ANALISIS</Text><Text style={{ color: theme.colors.text, fontSize: 27, fontWeight: '800' }}>Laporan keuangan</Text><View style={{ backgroundColor: 'white', padding: 22, borderRadius: 20, gap: 8, marginTop: 8 }}><Text style={{ fontSize: 22 }}>📊</Text><Text style={{ color: theme.colors.text, fontWeight: '800', fontSize: 17 }}>Laporan sedang disiapkan</Text><Text style={{ color: theme.colors.muted, lineHeight: 21 }}>Tahap berikutnya: grafik arus kas, ringkasan per kategori, dan filter periode harian, mingguan, serta bulanan.</Text></View></View>;
+}
