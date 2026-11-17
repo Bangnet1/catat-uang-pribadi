@@ -1,24 +1,31 @@
 # Catat Uang Pribadi
 
-Starter aplikasi Android pencatatan keuangan pribadi memakai Expo, React Native, TypeScript, Expo Router, dan SQLite lokal.
+Aplikasi pencatatan keuangan pribadi Android berbasis Expo, React Native, TypeScript, Expo Router, dan SQLite lokal.
 
-## Status fitur
-- Dashboard ringkasan pemasukan, pengeluaran, dan selisih bulan berjalan.
-- Tambah transaksi pemasukan/pengeluaran dengan kategori, tanggal, catatan.
-- Riwayat transaksi.
-- Penyimpanan SQLite di perangkat; dapat digunakan offline.
-- Laporan dan pengaturan masih berupa kerangka.
+## Fitur starter
+- Dashboard ringkasan pemasukan, pengeluaran, dan saldo bersih bulan berjalan.
+- Tambah transaksi pemasukan/pengeluaran dengan kategori, tanggal, dan catatan.
+- Riwayat transaksi terbaru dan daftar transaksi.
+- SQLite lokal; transaksi tetap tersedia tanpa internet.
+- Tab laporan dan pengaturan sebagai kerangka pengembangan berikutnya.
 
-## Persiapan
+## Menjalankan
+
 ```bash
 npm install
 npx expo install --fix
 npx expo start
 ```
 
-## Build APK melalui EAS
+Buka Expo Go di Android dan pindai QR code dari terminal.
+
+## Android APK (nanti)
+
 ```bash
 npx eas-cli@latest build --platform android --profile preview
 ```
 
-Build profile `preview` menghasilkan APK. Database lokal tersimpan dalam aplikasi; uninstall aplikasi dapat menghapus data. Backup/impor belum tersedia.
+## Catatan penting
+- Database lokal disimpan sebagai `catat-uang-pribadi.db` di penyimpanan privat aplikasi.
+- Menghapus aplikasi dapat menghapus database lokal. Fitur ekspor/impor backup perlu diselesaikan sebelum penggunaan jangka panjang.
+- Periksa versi Expo SDK dan kompatibilitas paket hasil `npx expo install --fix` sebelum build.
