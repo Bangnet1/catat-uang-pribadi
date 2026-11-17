@@ -1,0 +1,5 @@
+import { Text, View } from 'react-native';
+import { theme } from '@/constants/theme';
+export default function SettingsScreen() {
+  return <View style={{ flex: 1, padding: 22, paddingTop: 64, gap: 12 }}><Text style={{ color: theme.colors.muted, fontSize: 13 }}>APLIKASI</Text><Text style={{ color: theme.colors.text, fontSize: 27, fontWeight: '800' }}>Pengaturan</Text><View style={{ backgroundColor: 'white', borderRadius: 18, padding: 18, gap: 8 }}><Text style={{ color: theme.colors.text, fontWeight: '800' }}>Catat Uang Pribadi</Text><Text style={{ color: theme.colors.muted }}>Versi 1.0.0 · Penyimpanan lokal SQLite</Text><Text style={{ color: theme.colors.muted, lineHeight: 20 }}>Data transaksi tersimpan di perangkat. Fitur backup dan pemulihan akan ditambahkan sebelum rilis stabil.</Text></View></View>;
+}
